@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
+
+all: figueiredoexo1
+
+figueiredoexo1: figueiredolisteint.o figueiredoexo1.o
+    $(CC) $(CFLAGS) -o figueiredoexo1 figueiredolisteint.o figueiredoexo1.o
+
+figueiredolisteint.o: figueiredolisteint.c figueiredolisteint.h
+    $(CC) $(CFLAGS) -c figueiredolisteint.c
+
+figueiredoexo1.o: figueiredoexo1.c figueiredolisteint.h
+    $(CC) $(CFLAGS) -c figueiredoexo1.c
+
+clean:
+    rm -f figueiredoexo1 figueiredolisteint.o figueiredoexo1.o

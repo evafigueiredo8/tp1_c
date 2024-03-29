@@ -1,0 +1,7 @@
+Je choisirais la liste chainée car :
+
+Correspondance naturelle : La structure de la liste chaînée correspond bien aux opérations de la pile.
+Simplicité : La manipulation des éléments de la pile est simple et directe.
+Efficacité : Ajouter ou retirer des éléments au sommet de la pile est efficace.
+Gestion de mémoire simplifiée : Pas de gaspillage de mémoire, allocation dynamique uniquement lorsque nécessaire.
+Allocation dynamique : La taille de la pile peut varier dynamiquement.
